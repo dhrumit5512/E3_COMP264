@@ -4,6 +4,7 @@ const output = document.getElementById("output");
 let html = "";
 
 for (let i = 0; i < data.pokemon.length; i++) { // html +=`<p>${data.pokemon[i].name}: ${data.pokemon[i].num}</p>`;
+<<<<<<< HEAD
     let next_evolution = 'none'} 
 
 
@@ -49,3 +50,10 @@ for (let i = 0; i < data.pokemon.length; i++) { // html +=`<p>${data.pokemon[i].
   
   }
   output.innerHTML = html;
+=======
+    let next_evolution = 'none'}
+
+    if (data.pokemon[i].next_evolution) {
+        next_evolution = data.pokemon[i].next_evolution[0].name + data.pokemon[i].next_evolution[0].num;
+      }
+>>>>>>> feature3
